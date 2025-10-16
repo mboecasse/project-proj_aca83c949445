@@ -12,7 +12,7 @@ const path = require('path');
 
 const winston = require('winston');
 
-*   const logger = require('./utils/logger');
+async *   const logger = require('./utils/logger');
  *   logger.info('Message', { metadata });
  *   logger.error('Error occurred', { error: error.message });
  *

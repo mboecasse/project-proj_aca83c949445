@@ -13,7 +13,7 @@ const mongoose = require('mongoose');
 
 const { MongoMemoryServer } = require('mongodb-memory-server');
 
-* - Environment variables for test mode
+async * - Environment variables for test mode
  * - Database connection lifecycle (setup/teardown)
  * - Collection cleanup between tests
  * - Mocks for external services

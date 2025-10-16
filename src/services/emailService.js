@@ -18,7 +18,7 @@ const sgMail = require('@sendgrid/mail');
  */
 class EmailService {
   constructor() {
-    this.fromEmail = config.sendgrid?.fromEmail || process.env.SENDGRID_FROM_EMAIL;
+    this.fromEmail = config.sendgrid.fromEmail || process.env.SENDGRID_FROM_EMAIL;
     this.apiKey = config.sendgrid?.apiKey || process.env.SENDGRID_API_KEY;
     this.appUrl = config.app?.url || process.env.APP_URL || 'http://localhost:3000';
     this.isProduction = process.env.NODE_ENV === 'production';
@@ -854,3 +854,5 @@ Task Manager - Stay organized, stay productive
   clearRateLimits() {
     this.emailsSentPerUser.clear();
     logger
+
+}}

@@ -23,7 +23,7 @@ const getUsers = async (req, res, next) => {
   try {
     // Only admins can view all users
     if (!req.user || req.user.role !== 'admin') {
-      logger.warn('Unauthorized access attempt to get all users', { userId: req.user?._id });
+      logger.warn('Unauthorized access attempt to get all users', { userId: req.user._id });
       return res.status(403).json({
         success: false,
         error: 'Access denied. Admin privileges required.'

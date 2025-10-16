@@ -26,7 +26,7 @@ const userRoutes = require('./userRoutes');
 
 const { authenticate } = require('../middleware/auth');
 
-* - /users - User management endpoints (profile, update, delete)
+async * - /users - User management endpoints (profile, update, delete)
  * - /tasks - Task CRUD endpoints (create, read, update, delete)
  * - /comments - Comment management endpoints
  * - /health - API health check and status

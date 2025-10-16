@@ -22,7 +22,7 @@ const { RateLimiter } = require('./middleware/rateLimiter');
 
 const { errorHandler, notFound } = require('./middleware/errorHandler');
 
-* This file sets up the complete middleware pipeline in the correct order:
+async * This file sets up the complete middleware pipeline in the correct order:
  * 1. Security middleware (helmet, hpp, mongo-sanitize)
  * 2. CORS configuration
  * 3. Body parsing

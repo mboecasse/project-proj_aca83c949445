@@ -53,7 +53,7 @@ class RedisService {
   async connect() {
     try {
       const redisConfig = {
-        host: config.redis?.host || process.env.REDIS_HOST || 'localhost',
+        host: config.redis.host || process.env.REDIS_HOST || 'localhost',
         port: config.redis?.port || process.env.REDIS_PORT || 6379,
         password: config.redis?.password || process.env.REDIS_PASSWORD,
         db: config.redis?.db || process.env.REDIS_DB || 0,
@@ -596,3 +596,5 @@ class RedisService {
       this._validateKey(identifier);
 
       const key = `${KEY_PREFIXES.
+
+}}}}

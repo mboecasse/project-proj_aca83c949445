@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 
 const { MongoMemoryServer } = require('mongodb-memory-server');
 
-* Tests the Task model schema validation, default values, enum constraints,
+async * Tests the Task model schema validation, default values, enum constraints,
  * and data integrity rules.
  *
  * @module tests/unit/models/Task.test
@@ -525,3 +525,5 @@ describe('Task Model', () => {
 
       task.status = 'completed';
       task.description = 'Updated description';
+
+}}})))
