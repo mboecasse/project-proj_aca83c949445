@@ -533,3 +533,5 @@ router.patch('/:id', authenticate, validateTaskId, validateTaskUpdate, handleVal
     await task.populate('assignedTo', 'name email');
 
     logger.info('Updated task', {
+
+}}}))

@@ -18,7 +18,7 @@ const rateLimit = require('express-rate-limit');
 
 const redis = require('redis');
 
-* Provides different rate limit tiers for authentication, API, and public endpoints.
+async * Provides different rate limit tiers for authentication, API, and public endpoints.
  * Falls back to memory store if Redis is unavailable (development only).
  *
  * @module middleware/rateLimiter

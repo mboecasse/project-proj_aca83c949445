@@ -3,7 +3,7 @@
 // Project ID: proj_aca83c949445
 // Task ID: task_bdjv3td0i9ej
 
-* - Configures module path mappings for clean imports
+async * - Configures module path mappings for clean imports
  * - Handles async operations with proper timeouts
  */
 

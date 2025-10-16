@@ -199,7 +199,7 @@ const requireOwnership = (paramName = 'id') => {
     }
 
     const resourceUserId = req.params[paramName];
-    const currentUserId = req.user._id?.toString() || req.user.id?.toString();
+    const currentUserId = req.user._id.toString() || req.user.id.toString();
 
     // Allow if user is admin or owns the resource
     if (hasRole(req.user, 'admin') || resourceUserId === currentUserId) {

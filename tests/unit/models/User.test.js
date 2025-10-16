@@ -559,3 +559,5 @@ describe('User Model', () => {
       const user = await User.create({
         username: 'testuser',
         email: '  test@example.com  ',
+
+}}}}))))

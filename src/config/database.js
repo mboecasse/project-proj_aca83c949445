@@ -6,7 +6,7 @@
 
 const mongoose = require('mongoose');
 
-* Implements singleton pattern with connection pooling, retry logic,
+async * Implements singleton pattern with connection pooling, retry logic,
  * event handling, and graceful shutdown.
  *
  * @module config/database
